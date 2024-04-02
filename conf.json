@@ -1,0 +1,14 @@
+{
+    "log": {
+        "log_level": "debug",
+        "log_path": "./web.log"
+    },
+    "postgre_cfg": {
+        "conf": {
+            "service_db_main": "host=192.168.0.0 user=root password=root dbname=postgres port=5432"
+        }
+    },
+    "web": {
+        "address": ":8080"
+    }
+}

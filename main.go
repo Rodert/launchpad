@@ -1,7 +1,16 @@
 package main
 
-import "launchpad/binance"
+import (
+	"github.com/sirupsen/logrus"
+	"github.com/spf13/cobra"
+	"launchpad/cmd"
+	"launchpad/internal/version"
+)
 
+// launchpad
 func main() {
-	binance.GetList()
+	root := &cobra.Command{Use: "launchpad", Version: version.VersionInfo()}
+	if err := cmd.Command(root).Execute(); err != nil {
+		logrus.Error(err)
+	}
 }

@@ -19,3 +19,29 @@
 
 # Go workspace file
 go.work
+
+
+.DS_Store
+*.hcl
+walle
+*.log
+*.log*
+
+.build/
+vendor/
+.vscode/
+.idea/
+.idea/*
+databases/
+*__debug_*
+.VSCodeCounter/
+*.xml
+*.xlsx
+*.xls
+!provider/reply/reply_test/testdata/*.xlsx
+.env
+.build
+
+#target
+launchpad
+*.json
